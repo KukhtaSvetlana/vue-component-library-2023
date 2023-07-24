@@ -12,6 +12,8 @@ export * from './components/ui'
 export {
   EButtonDesign,
   EButtonSize,
+  EInputType,
+  EValidationState
 } from './components/ui/types.ts'
 
 // NB! ICONS
