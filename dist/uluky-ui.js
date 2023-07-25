@@ -1166,8 +1166,7 @@ const S = (e, t) => {
 function vo(e, t) {
   return l(), d("svg", ho, _o);
 }
-const qr = /* @__PURE__ */ S(uo, [["render", vo], ["__scopeId", "data-v-b7104ab3"]]);
-const go = {
+const qr = /* @__PURE__ */ S(uo, [["render", vo], ["__scopeId", "data-v-b7104ab3"]]), go = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",

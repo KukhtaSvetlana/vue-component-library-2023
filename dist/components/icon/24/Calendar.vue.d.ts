@@ -1,6 +1,4 @@
 import { EIconColor } from '../types.ts';
-import '@/assets/style/color.scss';
-import '@/assets/style/color-classes.scss';
 declare const _default: import("vue").DefineComponent<{
     color: {
         type: import("vue").PropType<EIconColor>;
