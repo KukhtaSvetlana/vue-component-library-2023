@@ -55,7 +55,7 @@
       show-arrow
       :content="hint!"
     >
-      <Icon24Info class="tooltip-textarea"/>
+      <Info class="tooltip-textarea"/>
     </el-tooltip>
 
     <span
@@ -70,6 +70,8 @@
 
 <script setup lang="ts">
 import { computed, ComputedRef, ref, Ref, useSlots } from 'vue'
+import { ElInput } from 'element-plus'
+import Info from '../icon/24/Info.vue'
 // import { v4 as uuidV4 } from 'uuid'
 import { EInputType, EValidationState } from './types'
 
