@@ -2,11 +2,11 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 26.05.2023
  */
-import { EDirectionArrow, EIconColor } from '../../types.ts';
+import { EDirectionArrow, EIconColor, EIconSize } from '../../types.ts';
 declare const _default: import("vue").DefineComponent<{
     size: {
-        type: import("vue").PropType<24 | 32>;
-        default: number;
+        type: import("vue").PropType<EIconSize>;
+        default: EIconSize;
     };
     color: {
         type: import("vue").PropType<EIconColor>;
@@ -18,8 +18,8 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     size: {
-        type: import("vue").PropType<24 | 32>;
-        default: number;
+        type: import("vue").PropType<EIconSize>;
+        default: EIconSize;
     };
     color: {
         type: import("vue").PropType<EIconColor>;
@@ -30,7 +30,7 @@ declare const _default: import("vue").DefineComponent<{
         required: true;
     };
 }>>, {
-    size: 24 | 32;
+    size: EIconSize;
     color: EIconColor;
 }, {}>;
 export default _default;

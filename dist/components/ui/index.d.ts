@@ -4,5 +4,4 @@
  */
 import UButton from './UButton.vue';
 import UTag from './UTag.vue';
-import UInput from './UInput.vue';
-export { UButton, UTag, UInput, };
+export { UButton, UTag, };

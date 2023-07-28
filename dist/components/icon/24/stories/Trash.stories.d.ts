@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3';
-import Icon from '@/components/icon/24/Trash.vue';
+import Icon from '@/components/icon/24/ISmTrash.vue';
 declare const _default: {
     title: string;
     component: import("vue").DefineComponent<{
