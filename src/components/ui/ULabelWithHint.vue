@@ -22,6 +22,7 @@
 
 
 <script setup lang="ts">
+import { ElTooltip } from 'element-plus'
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 23.05.2023
