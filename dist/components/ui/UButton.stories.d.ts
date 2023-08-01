@@ -57,6 +57,7 @@ declare const _default: {
                     [key: string]: any;
                 }>) => void)[] | undefined;
                 readonly iconLocation?: EIconLocation | undefined;
+                readonly fullWidth?: boolean | undefined;
             };
             $attrs: {
                 [x: string]: unknown;
@@ -89,6 +90,9 @@ declare const _default: {
                 };
                 iconLocation: {
                     type: import("vue").PropType<EIconLocation>;
+                };
+                fullWidth: {
+                    type: import("vue").PropType<boolean>;
                 };
             }>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {
                 size: EButtonSize;
@@ -133,6 +137,9 @@ declare const _default: {
             iconLocation: {
                 type: import("vue").PropType<EIconLocation>;
             };
+            fullWidth: {
+                type: import("vue").PropType<boolean>;
+            };
         }>> & import("vue").ShallowUnwrapRef<{}> & {} & import("vue").ComponentCustomProperties & {};
         __isFragment?: undefined;
         __isTeleport?: undefined;
@@ -155,6 +162,9 @@ declare const _default: {
         };
         iconLocation: {
             type: import("vue").PropType<EIconLocation>;
+        };
+        fullWidth: {
+            type: import("vue").PropType<boolean>;
         };
     }>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {
         size: EButtonSize;
