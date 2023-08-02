@@ -70,6 +70,7 @@
 
 <script setup lang="ts">
 import { ComputedRef, Ref, useSlots, ref, computed } from 'vue'
+import { ElInput, ElTooltip } from 'element-plus'
 import { v4 as uuidV4 } from 'uuid'
 import ISmInfo from '../icon/24/ISmInfo.vue'
 import { EInputType, EValidationState } from './types'
