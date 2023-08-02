@@ -13,8 +13,10 @@ export {
   EButtonDesign,
   EButtonSize,
   EIconLocation,
+  EInputType,
+  ETagColor,
+  EValidationState,
   EVerificationTagStatus,
-  ETagColor
 } from './components/ui/types.ts'
 
 // NB! ICONS
