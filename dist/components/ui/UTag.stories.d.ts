@@ -34,5 +34,5 @@ declare const _default: {
 };
 export default _default;
 type Story = StoryObj<typeof BaseTag>;
-export declare const Attention_Clickable: Story;
-export declare const Warning_NotClickable: Story;
+export declare const Attention: Story;
+export declare const Warning: Story;

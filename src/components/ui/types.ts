@@ -73,17 +73,11 @@ export enum EButtonDesign {
   RoundedSecondary = 'btn-rounded-secondary',
   RoundedWarning = 'btn-rounded-warning',
   RoundedInfo = 'btn-rounded-info',
-
   TextDefault = 'btn-text-default',
-
   TagRequired = 'btn-tag btn-tag-required',
-
   TagProblem = 'btn-tag btn-tag-problem',
-
   TagProcess = 'btn-tag btn-tag-process',
-
   TagDefault = 'btn-tag btn-tag-default',
-
 }
 
 export enum EIconLocation {

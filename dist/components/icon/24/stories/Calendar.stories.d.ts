@@ -1,5 +1,7 @@
 import { StoryObj } from '@storybook/vue3';
 import Calendar from '@/components/icon/24/ISmCalendar.vue';
+import '@/assets/style/color.scss';
+import '@/assets/style/color-classes.scss';
 declare const _default: {
     title: string;
     component: import("vue").DefineComponent<{
