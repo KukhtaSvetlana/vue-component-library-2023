@@ -5,26 +5,25 @@
       class="label__text"
       v-text="label"
     />
-<!--    <template v-if="tooltip"> effect="light"-->
-<!--    <span>{{ tooltip }}</span>-->
-    <el-tooltip v-if="isClient" content="the tooltip content">
-      <ISmInfo/>
+
+    <el-tooltip
+      v-if="isClient && tooltip"
+      popper-class="tooltip"
+      effect="light"
+      placement="top"
+      show-arrow
+      :content="tooltip"
+      :raw-content="props.asHtml"
+    >
+      <ISmInfo class="ml-10"/>
     </el-tooltip>
 
-<!--      <ElTooltip></ElTooltip>-->
-<!--  :content="tooltip" show-arrow  </template>-->
-
-<!--  popper-class  <el-tooltip-->
-<!--      v-if="tooltip"-->
-<!--      popper-class="tooltip"-->
-<!--      effect="light"-->
-<!--      placement="top"-->
-<!--      show-arrow-->
-<!--      :content="tooltip"-->
-<!--      :raw-content="props.asHtml"-->
-<!--    >-->
-<!--      <ISmInfo class="ml-10"/>-->
+<!--    <el-tooltip -->
+<!--      v-if="isClient" -->
+<!--      content="the tooltip content">-->
+<!--      <ISmInfo/>-->
 <!--    </el-tooltip>-->
+
   </div>
 </template>
 

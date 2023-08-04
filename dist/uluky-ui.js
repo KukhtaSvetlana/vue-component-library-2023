@@ -7616,28 +7616,33 @@ const lm = /* @__PURE__ */ ve(F0, [["__scopeId", "data-v-3ca34c15"]]), H0 = { cl
     asHtml: { type: Boolean, default: !1 }
   },
   setup(e) {
-    const t = A(!1);
+    const t = e, n = A(!1);
     return ke(() => {
-      t.value = !0;
-    }), (n, o) => (_(), O("div", H0, [
-      n.label ? (_(), O("span", {
+      n.value = !0;
+    }), (o, r) => (_(), O("div", H0, [
+      o.label ? (_(), O("span", {
         key: 0,
         class: "label__text",
-        textContent: ce(n.label)
+        textContent: ce(o.label)
       }, null, 8, N0)) : N("", !0),
-      t.value ? (_(), z(c(ro), {
+      n.value && o.tooltip ? (_(), z(c(ro), {
         key: 1,
-        content: "the tooltip content"
+        "popper-class": "tooltip",
+        effect: "light",
+        placement: "top",
+        "show-arrow": "",
+        content: o.tooltip,
+        "raw-content": t.asHtml
       }, {
         default: H(() => [
-          re(qo)
+          re(qo, { class: "ml-10" })
         ]),
         _: 1
-      })) : N("", !0)
+      }, 8, ["content", "raw-content"])) : N("", !0)
     ]));
   }
 });
-const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-b468b105"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
+const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-d13c6bd1"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
   __name: "UTag",
   props: {
     color: {},
