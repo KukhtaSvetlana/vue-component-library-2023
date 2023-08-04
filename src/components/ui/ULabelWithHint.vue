@@ -5,7 +5,7 @@
       class="label__text"
       v-text="label"
     />
-    <client-only>
+    <ClientOnly>
       <el-tooltip
         v-if="tooltip"
         popper-class="tooltip"
@@ -17,7 +17,7 @@
       >
         <ISmInfo class="ml-10"/>
       </el-tooltip>
-    </client-only>
+    </ClientOnly>
   </div>
 </template>
 

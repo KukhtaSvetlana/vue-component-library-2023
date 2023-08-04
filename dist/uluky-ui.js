@@ -7618,7 +7618,7 @@ const lm = /* @__PURE__ */ ve(F0, [["__scopeId", "data-v-3ca34c15"]]), H0 = { cl
   setup(e) {
     const t = e;
     return (n, o) => {
-      const r = yt("client-only");
+      const r = yt("ClientOnly");
       return _(), O("div", H0, [
         n.label ? (_(), O("span", {
           key: 0,
@@ -7648,7 +7648,7 @@ const lm = /* @__PURE__ */ ve(F0, [["__scopeId", "data-v-3ca34c15"]]), H0 = { cl
     };
   }
 });
-const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-5978bf58"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
+const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-3adfe19e"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
   __name: "UTag",
   props: {
     color: {},
