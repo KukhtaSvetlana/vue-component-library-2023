@@ -5,6 +5,7 @@
       class="label__text"
       v-text="label"
     />
+    <ElTooltip :content="'test'"></ElTooltip>
 <!--    <el-tooltip-->
 <!--      v-if="tooltip"-->
 <!--      popper-class="tooltip"-->
@@ -25,7 +26,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 23.05.2023
  */
-// import { ElTooltip } from 'element-plus'
+import { ElTooltip } from 'element-plus'
 import ISmInfo from '@/components/icon/24/ISmInfo.vue'
 
 interface Props {
