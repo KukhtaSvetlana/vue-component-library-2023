@@ -6,14 +6,14 @@
       v-text="label"
     />
 <!--    <template v-if="tooltip">-->
+    <span>{{ tooltip }}</span>
+
       <ElTooltip
-        popper-class="tooltip"
-        placement="top"
         effect="light"
       ></ElTooltip>
 <!--  :content="tooltip" show-arrow  </template>-->
 
-<!--    <el-tooltip-->
+<!--  popper-class  <el-tooltip-->
 <!--      v-if="tooltip"-->
 <!--      popper-class="tooltip"-->
 <!--      effect="light"-->
