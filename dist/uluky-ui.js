@@ -7623,11 +7623,11 @@ const lm = /* @__PURE__ */ ve(F0, [["__scopeId", "data-v-3ca34c15"]]), H0 = { cl
         textContent: ue(t.label)
       }, null, 8, N0)) : z("", !0),
       k("span", null, ue(t.tooltip), 1),
-      re(c(ro), { effect: "light" })
+      re(c(ro))
     ]));
   }
 });
-const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-8c0cde3c"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
+const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-3a6097c1"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
   __name: "UTag",
   props: {
     color: {},
