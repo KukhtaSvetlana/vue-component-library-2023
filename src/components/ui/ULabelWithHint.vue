@@ -22,11 +22,11 @@
 
 
 <script setup lang="ts">
-import { ElTooltip } from 'element-plus'
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 23.05.2023
  */
+import { ElTooltip } from 'element-plus'
 import ISmInfo from '@/components/icon/24/ISmInfo.vue'
 
 interface Props {
@@ -34,7 +34,7 @@ interface Props {
   tooltip?: string
   asHtml?: boolean
 }
-
+// @ts-ignore
 const props = withDefaults(defineProps<Props>(), { asHtml: false })
 
 </script>
