@@ -5,18 +5,19 @@
       class="label__text"
       v-text="label"
     />
-
-<!--    <el-tooltip-->
-<!--      v-if="tooltip"-->
-<!--      popper-class="tooltip"-->
-<!--      effect="light"-->
-<!--      placement="top"-->
-<!--      show-arrow-->
-<!--      :content="tooltip"-->
-<!--      :raw-content="props.asHtml"-->
-<!--    >-->
-<!--      <ISmInfo class="ml-10"/>-->
-<!--    </el-tooltip>-->
+    <client-only>
+      <el-tooltip
+        v-if="tooltip"
+        popper-class="tooltip"
+        effect="light"
+        placement="top"
+        show-arrow
+        :content="tooltip"
+        :raw-content="props.asHtml"
+      >
+        <ISmInfo class="ml-10"/>
+      </el-tooltip>
+    </client-only>
   </div>
 </template>
 
@@ -26,8 +27,8 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 23.05.2023
  */
-// import { ElTooltip } from 'element-plus'
-// import ISmInfo from '@/components/icon/24/ISmInfo.vue'
+import { ElTooltip } from 'element-plus'
+import ISmInfo from '@/components/icon/24/ISmInfo.vue'
 
 interface Props {
   label?: string
