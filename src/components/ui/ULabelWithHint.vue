@@ -9,10 +9,9 @@
       <ElTooltip
         popper-class="tooltip"
         placement="top"
-        show-arrow
         effect="light"
       ></ElTooltip>
-<!--  :content="tooltip"  </template>-->
+<!--  :content="tooltip" show-arrow  </template>-->
 
 <!--    <el-tooltip-->
 <!--      v-if="tooltip"-->

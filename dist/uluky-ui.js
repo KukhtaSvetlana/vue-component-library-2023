@@ -7625,13 +7625,12 @@ const lm = /* @__PURE__ */ ve(F0, [["__scopeId", "data-v-3ca34c15"]]), H0 = { cl
       re(c(ro), {
         "popper-class": "tooltip",
         placement: "top",
-        "show-arrow": "",
         effect: "light"
       })
     ]));
   }
 });
-const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-fee9e40e"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
+const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-d0c2b20c"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
   __name: "UTag",
   props: {
     color: {},
