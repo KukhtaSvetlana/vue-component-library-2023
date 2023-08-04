@@ -5,7 +5,13 @@
       class="label__text"
       v-text="label"
     />
-    <ElTooltip :content="'test'"></ElTooltip>
+    <ElTooltip
+      popper-class="tooltip"
+      placement="top"
+      show-arrow
+      effect="light"
+      :content="tooltip"
+    ></ElTooltip>
 <!--    <el-tooltip-->
 <!--      v-if="tooltip"-->
 <!--      popper-class="tooltip"-->
@@ -15,7 +21,7 @@
 <!--      :content="tooltip"-->
 <!--      :raw-content="props.asHtml"-->
 <!--    >-->
-      <ISmInfo class="ml-10"/>
+<!--      <ISmInfo class="ml-10"/>-->
 <!--    </el-tooltip>-->
   </div>
 </template>
@@ -27,7 +33,7 @@
  * on 23.05.2023
  */
 import { ElTooltip } from 'element-plus'
-import ISmInfo from '@/components/icon/24/ISmInfo.vue'
+// import ISmInfo from '@/components/icon/24/ISmInfo.vue'
 
 interface Props {
   label?: string
