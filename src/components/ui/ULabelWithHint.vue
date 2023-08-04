@@ -6,9 +6,12 @@
       v-text="label"
     />
 <!--    <template v-if="tooltip"> effect="light"-->
-    <span>{{ tooltip }}</span>
+<!--    <span>{{ tooltip }}</span>-->
+    <el-tooltip v-if="isClient" content="the tooltip content">
+      <ISmInfo/>
+    </el-tooltip>
 
-      <ElTooltip></ElTooltip>
+<!--      <ElTooltip></ElTooltip>-->
 <!--  :content="tooltip" show-arrow  </template>-->
 
 <!--  popper-class  <el-tooltip-->
@@ -32,7 +35,11 @@
  * on 23.05.2023
  */
 import { ElTooltip } from 'element-plus'
-// import ISmInfo from '@/components/icon/24/ISmInfo.vue'
+import ISmInfo from '@/components/icon/24/ISmInfo.vue'
+
+import { onMounted, ref } from 'vue'
+
+const isClient = ref(false)
 
 interface Props {
   label?: string
@@ -43,6 +50,9 @@ interface Props {
 // @ts-ignore
 const props = withDefaults(defineProps<Props>(), { asHtml: false })
 
+onMounted(() => {
+  isClient.value = true
+})
 </script>
 
 
