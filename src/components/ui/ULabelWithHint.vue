@@ -5,15 +5,14 @@
       class="label__text"
       v-text="label"
     />
-    <template v-if="tooltip">
+<!--    <template v-if="tooltip">-->
       <ElTooltip
         popper-class="tooltip"
         placement="top"
         show-arrow
         effect="light"
-        :content="tooltip"
       ></ElTooltip>
-    </template>
+<!--  :content="tooltip"  </template>-->
 
 <!--    <el-tooltip-->
 <!--      v-if="tooltip"-->
