@@ -6419,7 +6419,7 @@ const ve = (e, t) => {
         "show-word-limit": "",
         type: p.type
       }, p.$attrs, {
-        onInput: g[0] || (g[0] = (m) => p.$emit("input:modelValue", m)),
+        onInput: g[0] || (g[0] = (m) => p.$emit("update:model-value", m)),
         onFocus: g[1] || (g[1] = (m) => d(!0)),
         onBlur: g[2] || (g[2] = (m) => d(!1))
       }), Zo({ _: 2 }, [
@@ -7642,7 +7642,7 @@ const lm = /* @__PURE__ */ ve(F0, [["__scopeId", "data-v-3ca34c15"]]), H0 = { cl
     ]));
   }
 });
-const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-d13c6bd1"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
+const im = /* @__PURE__ */ ve(z0, [["__scopeId", "data-v-9f480214"]]), V0 = ["textContent"], um = /* @__PURE__ */ M({
   __name: "UTag",
   props: {
     color: {},
