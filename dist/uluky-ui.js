@@ -6419,7 +6419,7 @@ const ve = (e, t) => {
         "show-word-limit": "",
         type: p.type
       }, p.$attrs, {
-        onInput: g[0] || (g[0] = (m) => p.$emit("update:model-value", m)),
+        onInput: g[0] || (g[0] = (m) => p.$emit("input:modelValue", m)),
         onFocus: g[1] || (g[1] = (m) => d(!0)),
         onBlur: g[2] || (g[2] = (m) => d(!1))
       }), Zo({ _: 2 }, [
