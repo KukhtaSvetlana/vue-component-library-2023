@@ -15,7 +15,7 @@
       show-word-limit
       :type="type"
       v-bind="$attrs"
-      @input="$emit('input:modelValue', $event)"
+      @input="$emit('update:model-value', $event)"
       @focus="changeFocusState(true)"
       @blur="changeFocusState(false)"
     >
