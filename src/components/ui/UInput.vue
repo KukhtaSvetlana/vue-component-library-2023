@@ -32,31 +32,31 @@
       >
         <slot name="suffix"/>
 
-        <el-tooltip
-          v-if="canShowHintForInput"
-          popper-class="tooltip"
-          effect="light"
-          placement="top"
-          show-arrow
-          :content="hint!"
-        >
-          <ISmInfo class="ml-10"/>
-        </el-tooltip>
+<!--        <el-tooltip-->
+<!--          v-if="canShowHintForInput"-->
+<!--          popper-class="tooltip"-->
+<!--          effect="light"-->
+<!--          placement="top"-->
+<!--          show-arrow-->
+<!--          :content="hint!"-->
+<!--        >-->
+<!--          <ISmInfo class="ml-10"/>-->
+<!--        </el-tooltip>-->
       </template>
 
     </ElInput>
 
     <!-- NB! only textarea. El-plus does not have a suffix slot for the textarea. -->
-    <el-tooltip
-      v-if="canShowHintForTextarea"
-      popper-class="tooltip"
-      effect="light"
-      placement="top"
-      show-arrow
-      :content="hint!"
-    >
-      <ISmInfo class="tooltip-textarea"/>
-    </el-tooltip>
+<!--    <el-tooltip-->
+<!--      v-if="canShowHintForTextarea"-->
+<!--      popper-class="tooltip"-->
+<!--      effect="light"-->
+<!--      placement="top"-->
+<!--      show-arrow-->
+<!--      :content="hint!"-->
+<!--    >-->
+<!--      <ISmInfo class="tooltip-textarea"/>-->
+<!--    </el-tooltip>-->
 
     <span
       v-text="label"
@@ -70,9 +70,10 @@
 
 <script setup lang="ts">
 import { ComputedRef, Ref, useSlots, ref, computed } from 'vue'
-import { ElInput, ElTooltip } from 'element-plus'
+import { ElInput } from 'element-plus'
+// import { ElTooltip } from 'element-plus'
 import { v4 as uuidV4 } from 'uuid'
-import ISmInfo from '../icon/24/ISmInfo.vue'
+// import ISmInfo from '../icon/24/ISmInfo.vue'
 import { EInputType, EValidationState } from './types'
 
 export interface Props {
@@ -117,7 +118,7 @@ const classes = computed(() => {
   ]
 })
 
-const canShowHintForTextarea: ComputedRef<boolean> = computed(() => props.type === EInputType.textarea && !!props.hint)
+// const canShowHintForTextarea: ComputedRef<boolean> = computed(() => props.type === EInputType.textarea && !!props.hint)
 
 const canShowHintForInput: ComputedRef<boolean> = computed(() => props.type !== EInputType.textarea && !!props.hint)
 
